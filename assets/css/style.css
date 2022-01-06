@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html 
+{
+    scroll-behavior: smooth;
+}
+header {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 99;
+}
+header .logo {
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    color: #1D2654;
+    text-decoration: none;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+header nav ul li {
+    list-style: none;
+    margin: 0 10px;
+    font-weight: 600;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #1D2654;
+    margin: 0 10px;
+    transition: 1s;
+}
+header nav ul li a:hover {
+    color: #94B3FD;
+}
+
+.banner {
+    padding: 200px 250px 250px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner .content {
+    max-width: 700px;
+}
+.banner .content h2 {
+    font-size: 50px;
+    color: #94B3FD;
+}
+.banner .content h3 {
+    font-size: 20px;
+}
+
+/* Main */
+main .tentang {
+    padding: 20px 250px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+main .container-tentang {
+    width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    background-color: whitesmoke;
+    height: 500px;
+}
+main .box-tentang {
+    padding: 20px;
+    background-color: white;
+    margin: 7px;
+    border-radius: 8px;
+}
+main .kiri {
+    flex-grow: 1;
+}
+main .kanan {
+    flex-grow: 1;
+}
+main .artikel-medsos a {
+    text-decoration: none;
+    color: #1D2654;
+}
+main .artikel-medsos {
+    padding: 20px 300px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+main .artikel-medsos h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.container-sosial-media {
+    margin: 0 auto;
+    border: 6px solid #94B3FD;
+    width: 700px;
+    border-radius: 7px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.box {
+    padding: 20px;
+    flex-grow: 1;
+    text-align: center;
+    background-color:#94B3FD;
+    margin: 5px;
+    align-items: center;
+    border-radius: 6px;
+}
+.album {
+    width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+article h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+ 
+}
+article #kembali {
+    top: 45%;
+    left: 90%;
+    opacity: 50%;
+    width: 40px;
+    z-index: 99;
+    position: absolute;
+   -webkit-transform: rotate(180deg);
+   -moz-transform: rotate(180deg);
+   -ms-transform: rotate(180deg);
+   -o-transform: rotate(180deg);
+   transform: rotate(180deg);
+}
+article #lanjut {
+    top: 45%;
+    opacity: 50%;
+    left: 5%;
+    width: 40px;
+    position: absolute;
+    z-index: 99;
+}
+.album img {
+    width: 900px;
+}
+.slide {
+    display: flex;
+}
+
+
+/* footer */
+footer {
+    margin-top: 50px;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 20px 100px;
+}
+.container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.sosial {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sosial li {
+    margin: 0 10px;
+}
+.sosial li a {
+    text-decoration: none;
+    color: #1D2654;
+}
+.sosial a img {
+    color: #1D2654;
+    transition: color 1s ease;
+}
+.sosial a:hover {
+    color: #94B3FD;;
+}
+.footer-bottom {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.footer-bottom p {
+    font-size: 12px;
+    color: #1D2654;
+}
+
+@media (max-width:991px){
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        background-color: whitesmoke;
+    }
+    header nav ul li {
+        font-size: 13px;
+    }
+    .banner {
+        padding: 100px 20px 20px;
+        flex-direction: column-reverse;
+
+    }
+    .banner figure {
+        margin-top: 30px;
+    }
+    .banner .content {
+        max-width: 400px;
+        text-align: center;
+    }
+    .banner .content h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .banner .content h3 {
+        font-size: 15px;
+    }
+    .banner .content p {
+        font-size: 12px;
+    }
+    .banner figure img {
+        max-width: 350px;
+    }
+    .container-footer h3 {
+        font-size: 15px;
+    }
+    .container-footer p {
+        font-size: 12px;
+    }
+    footer {
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .footer-bottom {
+        background-color: #EDEDED;
+        text-align: center;
+        width: 100%;
+    }
+    main .artikel-medsos {
+        padding: 10px 5px;
+        width: 100%;
+        z-index: 99;
+        bottom: 150px;
+    }
+    main .artikel-medsos img {
+        width: 25px;
+    }
+    main .artikel-medsos h4 {
+        font-size: 12px;
+    }
+    main .artikel-medsos h1 {
+        font-size: 18px;
+    }
+    .container-sosial-media {
+        margin: 0 auto;
+        border: 3px solid #94B3FD;
+        width: 330px;
+        border-radius: 3px;
+    }
+    .box {
+        padding: 20px;
+        flex-grow: 1;
+        text-align: center;
+        background-color:#94B3FD;
+        margin: 5px;
+        align-items: center;
+        border-radius: 6px;
+    }
+    #album {
+        display: none;
+        /* width: 390px;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-bottom: 100px; */
+    }
+    article #kembali {
+        width: 20px;
+    }
+    article #lanjut {
+        width: 20px;
+    }
+    article #album .slide img {
+        width: 390px;
+    }
+    article .myalbum {
+        font-size: 18px;
+    }
+    main .tentang {
+        margin-top: 20px;
+        padding: 10px 20px;
+        width: 100%;   
+    }
+    main .tentang h1 {
+        font-size: 18px;
+    }
+    main .container-tentang {
+        width: 300px;
+        border-radius: 13px;
+        display: flex;
+        padding: 5px;
+        background-color: whitesmoke;
+        height: 450px;
+        flex-direction: column;
+    }
+    main .container-tentang h1 {
+        font-size: 17px;
+    }
+    main .container-tentang p {
+        font-size: 12px;
+    }
+    main .box-tentang {
+        padding: 10px;
+        background-color: white;
+        margin: 3px;
+        border-radius: 8px;
+    }
+}
